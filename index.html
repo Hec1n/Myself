@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Рустам Султанов — Портфолио</title>
+	<link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+
+<header>
+	<a href="index.html"><img src="static/images/logo.jpeg" alt="Логотип" class="logo"></a>
+	<nav class="navigation">
+		<a href="index.html" class="active">Главная</a>
+		<a href="projects.html">Проекты</a>
+	</nav>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+	<div class="hero-content">
+		<div class="hero-photo">
+			<img src="static/images/photo1.jpeg" alt="Рустам Султанов">
+		</div>
+		<div class="hero-text">
+			<h1>Рустам Султанов</h1>
+			<div class="subtitle">Веб-разработчик & Unity-разработчик</div>
+			<p>Ученик 11 класса ФТЛ «Флагман». Создаю веб-сайты и игры на Unity. Стремлюсь стать full-stack разработчиком и поступить в Назарбаев Университет.</p>
+			<div class="hero-tags">
+				<span class="tag">HTML / CSS</span>
+				<span class="tag">JavaScript</span>
+				<span class="tag">Python</span>
+				<span class="tag">Unity / C#</span>
+				<span class="tag">Blender</span>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- About -->
+<section id="about">
+	<h2 class="section-title">Обо мне</h2>
+	<p class="section-subtitle">Начинающий разработчик с широким кругозором</p>
+
+	<div class="about-grid">
+		<div class="about-card fade-up">
+			<span class="icon">&#128187;</span>
+			<h3>Разработка</h3>
+			<p>Занимаюсь созданием веб-сайтов и разработкой игр на движке Unity. На данный момент углублённо изучаю веб-разработку и двигаюсь к full-stack уровню.</p>
+		</div>
+		<div class="about-card fade-up">
+			<span class="icon">&#127891;</span>
+			<h3>Образование</h3>
+			<p>Учусь в 11 классе школы ФТЛ «Флагман». В планах — поступление в Назарбаев Университет на направление, связанное с IT.</p>
+		</div>
+		<div class="about-card fade-up">
+			<span class="icon">&#127760;</span>
+			<h3>Опыт</h3>
+			<p>Создавал веб-сайты на заказ, разрабатывал игры, писал код на Python, моделировал в Blender и собирал компьютеры. Люблю пробовать разные направления.</p>
+		</div>
+		<div class="about-card fade-up">
+			<span class="icon">&#127928;</span>
+			<h3>Увлечения</h3>
+			<p>Играл на гитаре, фортепиано и балалайке. Занимался ММА, рукопашным боем, плаванием и шахматами. Изучал английский, японский и казахский языки.</p>
+		</div>
+	</div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+	<h2 class="section-title">Навыки</h2>
+	<p class="section-subtitle">Технологии, с которыми я работаю</p>
+
+	<div class="skills-grid">
+		<div class="skill-item"><span class="skill-icon">&#127912;</span> HTML & CSS</div>
+		<div class="skill-item"><span class="skill-icon">&#9889;</span> JavaScript</div>
+		<div class="skill-item"><span class="skill-icon">&#128013;</span> Python</div>
+		<div class="skill-item"><span class="skill-icon">&#127918;</span> Unity</div>
+		<div class="skill-item"><span class="skill-icon">&#128296;</span> C#</div>
+		<div class="skill-item"><span class="skill-icon">&#127916;</span> Blender</div>
+		<div class="skill-item"><span class="skill-icon">&#128421;</span> Сборка ПК</div>
+		<div class="skill-item"><span class="skill-icon">&#128640;</span> Git & GitHub</div>
+	</div>
+</section>
+
+<footer>
+	<div class="footer-content">
+		<div class="footer-left">
+			<h3>Рустам Султанов</h3>
+			<p>Веб-разработчик & Unity-разработчик</p>
+		</div>
+		<div class="footer-links">
+			<div class="footer-col">
+				<h4>Навигация</h4>
+				<a href="index.html">Главная</a>
+				<a href="projects.html">Проекты</a>
+			</div>
+			<div class="footer-col">
+				<h4>Контакты</h4>
+				<a href="https://github.com/Hec1n" target="_blank">GitHub</a>
+				<a href="https://whatsapp.com" target="_blank">WhatsApp</a>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script>
+// Scroll animations
+const observer = new IntersectionObserver((entries) => {
+	entries.forEach(entry => {
+		if (entry.isIntersecting) {
+			entry.target.classList.add('visible');
+		}
+	});
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
